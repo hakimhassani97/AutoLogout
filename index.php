@@ -38,8 +38,12 @@ if ($_SESSION['username']){
             <td colspan="2" align="center" style="padding-top:10px">
             <input type="submit" value="Login" name="submit" /></td>
         </tr>
-        <?php  ?>
     </table>
+    <div style="color:red;">
+        <?php if(isset($_GET['out']))
+                echo "you were logged out<script>window.history.pushState('index', 'Title', 'index.php');</script>"
+        ?>
+    </div>
 </form>
 </body>
 </html>

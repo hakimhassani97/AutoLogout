@@ -6,7 +6,6 @@ if (isset($_GET['logout'])){
         header('Location: index.php?out');
     }
 }
-
 //if not logged in go to index.php
 if (!$_SESSION['username']){
     header('Location: index.php');

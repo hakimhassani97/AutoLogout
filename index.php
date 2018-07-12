@@ -11,13 +11,11 @@ if (isset($_POST['submit'])){
         header('Location: profile.php');
     }
 }
-
 //if logged in, go to profile.php
 if ($_SESSION['username']){
     header('Location: profile.php');
 }
 ?>
-
 <!DOCTYPE html>
 <html>
 <head>
